@@ -11,7 +11,7 @@ Dado("que o cliente tem um empréstimo criado") do
   
   Quando("o client consultar o serviço de empréstimo informando o ID do empréstimo") do
       #Função sendo chamada dentro da pasta services, to fazendo um get buscando pelo id e status e passando o token  
-      getID.self.find
+      response = getID.self.find
   end
   
   Então("o serviço deve me retornar as informações do empréstimo criado") do
